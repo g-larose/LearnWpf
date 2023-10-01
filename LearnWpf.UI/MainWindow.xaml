@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LearnWpf.UI"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
@@ -23,7 +24,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="22" />
             <RowDefinition />
-            <RowDefinition Height="20" />
+            <RowDefinition Height="16" />
         </Grid.RowDefinitions>
         
         <!--#region  WINDOW WRAPPER-->
@@ -32,13 +33,13 @@
                 Grid.RowSpan="3"
                 Grid.ColumnSpan="2"
                 CornerRadius="0 0 8 8"
-                Background="Azure">
+                Background="{StaticResource MaterialDesignDarkBackground}">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="18"
                                   ShadowDepth="10"
                                   Direction="270"
                                   Color="Black"
-                                  Opacity="1" />
+                                  Opacity=".6" />
             </Border.Effect>
             
         </Border>
@@ -49,7 +50,7 @@
                 Grid.ColumnSpan="2"
                 Grid.Row="0"
                 CornerRadius="8 8 0 0"
-                Background="LightGray"
+                Background="{StaticResource MaterialDesignDarkSeparatorBackground}"
                 BorderBrush="Black"
                 BorderThickness="0 0 0 1"
                 MouseDown="OnMouseDown">
@@ -63,7 +64,7 @@
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            FontSize="16"
-                           Foreground="Black"
+                           Foreground="{StaticResource PrimaryHueLightBrush}"
                            Text="Learn WPF"
                            Opacity=".6"/>
             </Grid>
@@ -80,7 +81,7 @@
                 Grid.Row="2"
                 Grid.ColumnSpan="2"
                 CornerRadius="0 0 8 8"
-                Background="Brown">
+                Background="{StaticResource PrimaryHueDarkBrush}">
             
              <Grid>
                 <Grid.ColumnDefinitions>
@@ -91,11 +92,11 @@
                 <TextBlock Grid.Column="0"
                            HorizontalAlignment="Left"
                            VerticalAlignment="Center"
-                           Margin="20 0"
-                           FontSize="16"
+                           Margin="20 0 0 2"
+                           FontSize="12"
                            Foreground="WhiteSmoke"
                            Text="Learn WPF"
-                           Opacity=".6"/>
+                           Opacity=".4"/>
              </Grid>
             
         </Border>
