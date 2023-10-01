@@ -22,7 +22,7 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="22" />
+            <RowDefinition Height="32" />
             <RowDefinition />
             <RowDefinition Height="16" />
         </Grid.RowDefinitions>
@@ -67,6 +67,27 @@
                            Foreground="{StaticResource PrimaryHueLightBrush}"
                            Text="Learn WPF"
                            Opacity=".6"/>
+                <!--#region CLOSE, MINIMIZE COMMANDS-->
+                <StackPanel Grid.Column="2"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            Margin="10 0">
+                    <Button Background="Transparent"
+                            BorderBrush="{x:Null}"
+                            Height="20"
+                            Width="40"
+                            Command="{Binding CloseCommand}" >
+                        <materialDesign:PackIcon Kind="Close"
+                                                 Height="20"
+                                                 Width="20" 
+                                                 Foreground="White"
+                                                 HorizontalAlignment="Center"
+                                                 VerticalAlignment="Center"/>
+                    </Button>
+                        
+
+                </StackPanel> 
+                <!--#endregion-->
             </Grid>
             
         </Border>
