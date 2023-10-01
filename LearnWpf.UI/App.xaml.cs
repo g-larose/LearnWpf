@@ -6,7 +6,7 @@ using System.Windows;
 namespace LearnWpf.UI;
 
 
-public partial class App : Application, IDisposable
+public partial class App : Application
 {
     private IHost _host;
 
@@ -24,12 +24,6 @@ public partial class App : Application, IDisposable
     }
 
 
-    protected override void OnExit(ExitEventArgs e)
-    {
-        base.OnExit(e);
-        Dispose();
-    }
-
     protected override void OnStartup(StartupEventArgs e)
     {
         base.OnStartup(e);
@@ -38,8 +32,4 @@ public partial class App : Application, IDisposable
         MainWindow.Show();
     }
 
-    public void Dispose()
-    {
-        this.Dispose();
-    }
 }
