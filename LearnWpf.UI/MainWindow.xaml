@@ -67,7 +67,7 @@
                            VerticalAlignment="Center"
                            FontSize="16"
                            Foreground="{StaticResource PrimaryHueLightBrush}"
-                           Text="Learn WPF"
+                           Text="{Binding Title}"
                            Opacity=".6"/>
                 <!--#region CLOSE, MINIMIZE COMMANDS-->
                 <StackPanel Grid.Column="2"
@@ -82,7 +82,7 @@
                         <materialDesign:PackIcon Kind="Close"
                                                  Height="20"
                                                  Width="20" 
-                                                 Foreground="White"
+                                                 Foreground="{StaticResource PrimaryHueMidBrush}"
                                                  HorizontalAlignment="Center"
                                                  VerticalAlignment="Center"/>
                     </Button>
